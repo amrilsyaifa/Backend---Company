@@ -13,6 +13,18 @@ mongoose.connect('mongodb://localhost:27017/Companys', { useNewUrlParser: true }
 //body parser
 app.use(bodyParser.json())
 
+//CORS
+app.use((req, res, next) => {
+    //Allow All Origin
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
+    if (req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET')
+        return res.status(200).json({})
+    }
+    next()
+})
+
 //routes
 const companyRouter = require('./api/routes/company')
 const officeRouter = require('./api/routes/office')
