@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/amrilsyaifa/Backend---Company/issues"
   },
-  "homepage": "https://github.com/amrilsyaifa/Backend---Company#readme"
+  "homepage": "https://github.com/amrilsyaifa/Backend---Company#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.5"
+  }
 }
