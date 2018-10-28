@@ -1,0 +1,19 @@
+{
+  "name": "backend-company",
+  "version": "1.0.0",
+  "description": "Backend with express and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrilsyaifa/Backend---Company.git"
+  },
+  "author": "Amril Syaifa Yasin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrilsyaifa/Backend---Company/issues"
+  },
+  "homepage": "https://github.com/amrilsyaifa/Backend---Company#readme"
+}
